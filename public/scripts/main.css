@@ -1,0 +1,53 @@
+body {
+	background: url('/images/space.jpg') fixed no-repeat;
+
+}
+
+
+/* Helper Classes */
+
+.center {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#white {
+	padding: 14px 10px;
+	display: inline-block;
+	color: #000;
+	background-color: #fff;
+	font-family: 'Pontano Sans';
+}
+
+#huge {
+	font-size: 3em;
+	color: #000;
+}
+
+/* Custom Parts */
+
+#header {
+	height: 250px;
+}
+
+#item {
+	padding: 40px 40px;
+	height: 400px;
+}
+
+#itemText {
+	padding: 160px 0px;
+}
+
+.colorFilter {
+	-webkit-transition: 1s ease;
+	transition: 1s ease;
+	-webkit-filter: hue-rotate(60deg);
+	background-color: hue-rotate(60deg);
+}
+
+.colorFilter2 {
+	-webkit-transition: 1s ease;
+	transition: 1s ease;
+	background-color: hue-rotate(0deg);
+}

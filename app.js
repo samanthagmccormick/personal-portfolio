@@ -4,7 +4,10 @@ var indexController = require('./controllers/index.js');
 var mongoose = require('mongoose');
 
 // connect to mongoose
-mongoose.connect('mongodb://localhost/portfolio');
+mongoose.connect('mongodb://localhost/portfoliooo');
+
+// seed teh database!
+require('./models/seeds/portfolioItemSeed.js');
 
 var app = express();
 app.set('view engine', 'jade');

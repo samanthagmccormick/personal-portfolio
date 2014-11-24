@@ -1,4 +1,15 @@
 extends layout
 
 block content
-	h1 Hello Boulder!
+	.container-fixed
+		.row#header
+			.col-lg-12.col-md-12.col-sm-12.col-xs-12.center
+				h1#white I'm Sam and I'm a full-stack web developer.
+			.col-lg-12.col-md-12.col-sm-12.col-xs-12.center
+				h2#white Poke around below to see some of my work.
+
+		//- List of portfolio projects!
+		for item in portfolioItems
+			.row#item(style='background-color: #{item.color}')
+				.col-lg-12.col-md-12.col-sm-12.col-xs-12.center
+					h3#huge(style='font-family: #{item.font}') #{item.title}
