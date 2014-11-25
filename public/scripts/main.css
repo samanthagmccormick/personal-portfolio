@@ -3,7 +3,6 @@ body {
 
 }
 
-
 /* Helper Classes */
 
 .center {
@@ -39,6 +38,8 @@ body {
 	padding: 160px 0px;
 }
 
+/* Homepage: hover over and colors transition */
+
 .colorFilter {
 	-webkit-transition: 1s ease;
 	transition: 1s ease;
@@ -49,5 +50,6 @@ body {
 .colorFilter2 {
 	-webkit-transition: 1s ease;
 	transition: 1s ease;
+	-webkit-filter: hue-rotate(0deg);
 	background-color: hue-rotate(0deg);
 }
