@@ -7,8 +7,6 @@ $(function(){
 
 		$(this).addClass('colorFilter');
 		$(this).removeClass('colorFilter2');
-
-
 	});
 
 	$(document).on('mouseleave', '#item', function() {
@@ -17,8 +15,6 @@ $(function(){
 		$(this).removeClass('colorFilter');
 		$(this).addClass('colorFilter2');
 
-
-		// $(this).removeClass('opacity');
 	});
 
 

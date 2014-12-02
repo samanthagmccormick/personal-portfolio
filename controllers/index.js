@@ -19,9 +19,11 @@ var indexController = {
 
 		PortfolioItem.findOne({_id: id}, function(err, result) {
 			// Render your portfolio item page with these specific results
-			res.render('portfolioItem', result);
+			res.render('portfolioItem', {
+				item: result
+			});
 		});
 	}
-};
+};  // end indexController
 
 module.exports = indexController;

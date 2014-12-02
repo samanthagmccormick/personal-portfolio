@@ -3,15 +3,18 @@ var mongoose = require('mongoose');
 var portfolioItemSchema = mongoose.Schema({
 	title: String,
 	description: String,
-	tools: String,
+	features: String,
 	githubURL: String,
-	galleryURL: String,
+	URL: String,
+	githubURL: String,
 	date: String,
 	type: String,
-	photo: String,
+	logo: String,
+	photos: [String],
 	popularity: Number,
 	color: String,
-	font: String
+	font: String,
+	tags: [String]
 });
 
 module.exports = mongoose.model('portfolioItem', portfolioItemSchema);

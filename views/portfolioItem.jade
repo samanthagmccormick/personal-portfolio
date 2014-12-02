@@ -1,0 +1,51 @@
+extends layout
+
+block content
+	.container-fluid#colorBlock(style='background-color: #{item.color}')
+		.container
+			.row
+				.col-lg-12.col-md-12.col-sm-12.col-xs-12.center
+					h1.whiteText.huge(style='font-family: #{item.font}') #{item.title}
+					h2.blackText is on the Interwebs here
+					a(href='#{item.URL}')
+						i.fa.fa-2x.fa-globe
+					h2.blackText and is on Github here
+					a(href='#{item.githubURL}')
+						img(src='/images/github_logo.png')
+
+			.row
+				.col-lg-6.col-md-6.col-sm-6.col-xs-12
+					.container
+					div#carousel-example.carousel.slide(data-ride='carousel')
+						.height.carousel-inner(role='listbox')
+							.item.active
+								img.center(src='/images/bp_logo.png')
+							for photo in item.photos
+								.item
+									img.center(src='#{photo}')
+
+						.carousel-control.left(href='#carousel-example' role='button' data-slide='prev')
+							i.glyphicon.glyphicon-chevron-left.fa.fa-caret-left(aria-hidden='true')
+							.sr-only
+								p Previous
+						.carousel-control.right(href='#carousel-example' role='button' data-slide='next')
+							i.glyphicon.glyphicon-chevron-right.fa.fa-caret-right(aria-hidden='true')
+							.sr-only
+								p Next
+				.col-lg-6.col-md-6.col-sm-6.col-xs-12
+					h2.blackText is about
+					p #{item.description}
+
+			.row
+				.col-lg-12.col-md-12.col-sm-12.col-xs-12
+						h2.blackText was built using
+						ul
+							for tag in item.tags
+								a(href='')
+									li.white #{tag}
+						h2.blackText has these features
+						p #{item.features}
+
+
+
+
