@@ -44,15 +44,18 @@ PortfolioItem.find({}, function(err, results){
 
 		var buildABasicBitch = new PortfolioItem({
 			title: 'Build a Basic Bitch',
-			description: 'This front-end web application was built to entertain. Outfit your very own Basic Bitch with accessories like pumpkin spice lattes and messy buns. Then name her, save her, and watch her dance to the beat of a Taylor Swift song.',
+			description: 'This client-side web application was built to entertain. Outfit your very own Basic Bitch with accessories like pumpkin spice lattes and messy buns. Then name her, save her, and watch her dance to the beat of a Taylor Swift song.',
 			features: 'Drag and drop, animation, responsive to all screen sizes, information storage, single page application, random quote generator, music player',
 			URL: 'http://www.samanthamccormick.com/basicbitch/',
 			githubURL: 'https://github.com/samanthagmccormick/build-a-basic-bitch',
 			date: '2014',
-			type: 'Front-end Web Application',
+			type: 'Client-side Web Application',
 			logo: '/images/bb_logo.png',
 			photos: [
-
+			'/images/bb_1.png',
+			'/images/bb_2.png',
+			'/images/bb_3.png',
+			'/images/bb_4.png'
 			],
 			color: '#2C858D',
 			font: 'Rock Salt',
@@ -70,6 +73,37 @@ PortfolioItem.find({}, function(err, results){
 
 		buildABasicBitch.save();
 
+	var infiniteAgenda = new PortfolioItem({
+			title: 'Infinite Agenda',
+			description: 'A client-side agenda application that scrolls infinitely, populating new dates. Agenda items can be edited and then re-saved.',
+			features: 'Infinite scroll, dynamically populating dates, edit in place.',
+			URL: 'http://infinite-agenda.herokuapp.com/',
+			githubURL: 'https://github.com/samanthagmccormick/infinite-agenda-express',
+			date: '2014',
+			type: 'Client-side Web Application',
+			logo: '/images/ia_logo.png',
+			photos: [
+				'/images/ia_1.png',
+				'/images/ia_2.png',
+				'/images/ia_3.png'
+			],
+			color: '#74CEB7',
+			font: 'Reenie Beanie',
+			tags: [
+			'JavaScript',
+			'jQuery',
+			'node.js',
+			'Express MVC',
+			'Twitter Bootstrap',
+			'moment.js',
+			'Jade'
+			]
+		});
+
+		infiniteAgenda.save();
+
 	}
+
+
 
 });

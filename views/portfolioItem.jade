@@ -2,24 +2,28 @@ extends layout
 
 block content
 	.container-fluid#colorBlock(style='background-color: #{item.color}')
-		.container
-			.row
+		.row
+			.container
 				.col-lg-12.col-md-12.col-sm-12.col-xs-12.center
 					h1.whiteText.huge(style='font-family: #{item.font}') #{item.title}
-					h2.blackText is on the Interwebs here
-					a(href='#{item.URL}')
-						i.fa.fa-2x.fa-globe
-					h2.blackText and is on Github here
+		.row.margin
+			.container
+				.col-lg-12.col-md-12.col-sm-12.col-xs-12.center
+					a.space(href='#{item.URL}')
+						img.icon(src='/images/globe.png' height='32' width='32')
+						p.inline Website
 					a(href='#{item.githubURL}')
-						img(src='/images/github_logo.png')
+						img.icon(src='/images/github_logo.png' height='32' width='35')
+						p.inline Github
 
-			.row
+		.container
+			.row.margin
 				.col-lg-6.col-md-6.col-sm-6.col-xs-12
 					.container
 					div#carousel-example.carousel.slide(data-ride='carousel')
 						.height.carousel-inner(role='listbox')
 							.item.active
-								img.center(src='/images/bp_logo.png')
+								img.center(src='#{item.logo}')
 							for photo in item.photos
 								.item
 									img.center(src='#{photo}')
@@ -35,16 +39,16 @@ block content
 				.col-lg-6.col-md-6.col-sm-6.col-xs-12
 					h2.blackText is about
 					p #{item.description}
+					h2.blackText has these features
+					p #{item.features}
 
-			.row
-				.col-lg-12.col-md-12.col-sm-12.col-xs-12
+			.row.margin
+				.col-lg-12.col-md-12.col-sm-12.col-xs-12.center
 						h2.blackText was built using
 						ul
 							for tag in item.tags
 								a(href='')
 									li.white #{tag}
-						h2.blackText has these features
-						p #{item.features}
 
 
 
