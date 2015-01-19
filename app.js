@@ -4,7 +4,7 @@ var indexController = require('./controllers/index.js');
 var mongoose = require('mongoose');
 
 // connect to mongoose
-mongoose.connect(process.env.MONGOHQ_URL || 'mongodb://localhost/portfolio');
+mongoose.connect(process.env.MONGOHQ_URL || 'mongodb://localhost/portfolioooo');
 
 // seed teh database!
 require('./models/seeds/portfolioItemSeed.js');
