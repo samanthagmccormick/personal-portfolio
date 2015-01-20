@@ -40,6 +40,11 @@ a:hover {
 	float: left;
 }
 
+.floatRight {
+	float: right;
+	text-align: right;
+}
+
 .inline {
 	display: inline;
 	font-size: 30px;
@@ -51,7 +56,11 @@ a:hover {
 }
 
 .margin {
-	margin: 10px 0px;
+	margin: 10px 0;
+}
+
+.fa-bars {
+	margin: 20px 40px 20px;
 }
 
 /* Bootstrap Custos */
@@ -90,12 +99,14 @@ a:hover {
 }
 
 #header {
-	height: 250px;
-}
+	margin: 0 40px 40px;
+	/* Padding gives breathing room to the top right icon */
+	padding-right: 20px;
+/*	height: 300px;
+*/}
 
 #item {
-	padding: 40px 40px;
-	height: 300px;
+	padding: 50px 40px 90px;
 }
 
 #itemText {
@@ -109,6 +120,26 @@ a:hover {
 .height {
 	height: 300px;
 }
+
+.abs {
+	position: absolute;
+}
+
+.rel {
+	position: relative;
+}
+
+#menuList {
+	margin-top: 100px;
+	position: absolute;
+	color: #fff;
+	background-color: pink;
+}
+
+.hidden {
+	display: none;
+}
+
 
 /* Homepage: hover over and colors transition */
 

@@ -2,11 +2,14 @@ extends layout
 
 block content
 	.container-fixed
+		.row
+			a(href="#")#menuButton
+				i.fa.fa-bars.fa-3x.whiteText.floatRight
 		.row#header
 			.col-lg-12.col-md-12.col-sm-12.col-xs-12.center
 				h1.white I'm Sam and I'm a full-stack web developer.
 			.col-lg-12.col-md-12.col-sm-12.col-xs-12.center
-				h2.white Poke around below to see some of my work.
+				h3.white Check out my recent projects below.
 
 		//- List of portfolio projects!
 		for item in portfolioItems

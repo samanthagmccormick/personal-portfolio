@@ -2,6 +2,8 @@
 
 $(function(){
 
+	$('#menuList').hide();
+
 	$(document).on('mouseenter', '#item', function() {
 		console.log('You entered it');
 
@@ -17,14 +19,10 @@ $(function(){
 
 	});
 
-
-
-
-
-
-
-
-
+	$(document).on('click', '#menuButton', function() {
+		console.log('you cliekd the menu button');
+		$('#menuList').slideDown();
+	});
 
 
 }); // end jQuery on doc ready

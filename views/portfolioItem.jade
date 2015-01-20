@@ -3,9 +3,17 @@ extends layout
 block content
 	.container-fluid#colorBlock(style='background-color: #{item.color}')
 		.row
-			.container
-				.col-lg-12.col-md-12.col-sm-12.col-xs-12.center
-					h1.whiteText.huge(style='font-family: #{item.font}') #{item.title}
+			.col-lg-10.col-md-10.col-sm-10.col-xs-10
+			.col-lg-2.col-md-2.col-sm-2.col-xs-2#nav			
+				a(href="#")#menuButton
+					i.fa.fa-bars.fa-3x.whiteText.floatRight
+				div#menuList
+					ul
+						li Stuff here
+
+		.row
+			.col-lg-12.col-md-12.col-sm-12.col-xs-12					
+				h1.whiteText.huge.center(style='font-family: #{item.font}') #{item.title}
 		.row.margin
 			.container
 				.col-lg-12.col-md-12.col-sm-12.col-xs-12.center
